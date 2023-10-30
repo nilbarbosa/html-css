@@ -1,0 +1,27 @@
+body{
+    background-color: #1a547cae;
+}
+h1{
+    color:#061018;
+}
+h2{
+    color: #0b2435;
+}
+p{
+    color: #102f43;
+}
+#principal{
+    background-color: #1b4d76;
+}
+.destaque{
+    font-style: italic;
+}
+.basico{
+    background-color: #3095D9;
+}
+.intermediario{
+    background-color: #307fd9;
+}
+.avancado{
+    background-color: #3049d9;
+}

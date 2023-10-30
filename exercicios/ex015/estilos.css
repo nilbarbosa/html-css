@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    font-size: larger;color: rgb(255, 255, 255);
+}
+h2{
+    font-size: medium;color: rgb(211, 210, 210);
+}
+p{
+    font-size: medium;color: rgb(126, 123, 123);
+    text-align: justify;
+}
+h3{
+    color: rgb(164, 164, 164);
+}

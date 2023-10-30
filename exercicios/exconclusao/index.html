@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício de conclusão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>exercício de conclusão do módulo 1</h1>
+    <h2>formatação semântica</h2>
+    <p>teg <strong>&lt;strong&gt;</strong> para adicionar<strong> negrito</strong> de forma semântica;</p>
+    <p>termo <em>&lt;em&gt;</em> para adicionar <em>negrito</em> a frase;</p>
+    <p>termo &lt;mark&gt; para <mark>marcar</mark> frase;</p>
+    <p>termo &lt;small&gt; para <small>diminuir</small> texto;</p>
+    <p>termo &lt;dell&gt; para <dell>cortar</dell> texto;</p>
+    <p>termo &lt;ins&gt; para <ins>grifar</ins> texto;</p>
+    <p>termo &lt;sup&gt; para <sup>sobescrever</sup>textos;</p>
+    <p>termo &lt;sup&gt; para <sub>subreescrever</sub> textos;</p>
+    <p>termo &lt;abbr&gt; para dar <abbr title="significado">sig</abbr> a determinado texto;</p>
+    <p>termo &lt;q&gt; para <q>citar</q> texto.</p>
+   
+    <h2>listas</h2>
+    <h3>ordenada</h3>
+    <ol>
+       <li>foi aprendido</li> 
+       <li>conteúdo de listas</li>
+       <li>ordenadas</li>
+    </ol>
+    <ol type="A">
+        <li>lista ordenada</li>
+        <li>de "A"</li>
+        <li>até a letra corespondente</li>
+        <li>ao ultimo ítem</li>
+        <li>da lista</li>
+    </ol>
+    <ol type="I">
+        <li>lsita ordenada</li>
+        <li>em números rômanos</li>
+    </ol>
+    <h3>desordenada</h3>
+    <ul>
+        <li>lista sem ordem</li>
+        <li>por nenhum caractere</li>
+        <li>usada quando a ordem</li>
+        <li>dos ítens listados</li>
+        <li>não são relevantes</li>
+    </ul>
+    <ul type="square">
+        <li>lista sem ordem</li>
+        <li> em esquare</li>
+        <li>usada quando a ordem</li>
+        <li>dos ítens listados</li>
+        <li>não são relevantes</li>
+    </ul>
+    <h3>listas adentradas</h3>
+    <ol>
+        <li>é possivel adicionar:</li>
+            <ul type="disc">
+                <li>uma ul</li>
+                <li>dentro de uma</li>
+                <li>ol</li>
+                <li>desta forma</li>
+            </ul>
+        <li>muito ultil para organização</li>
+            <ul type="disc">
+                <li>pois permite</li>
+                <li>organizar listas</li>
+                <li>e os tópicos</li>
+                <li>das listas</li>
+            </ul>
+    </ol>
+    <h2>links e ancoras</h2>
+    <h3>links externos</h3>
+        <a href="https://youtu.be/xYLizixflv4?si=8IKu-_093uFO1zoP" target="_blank" rel="externo">clique para ver link externo</a>
+    <h3>links internos</h3>
+        <a href="../ex001/index.html">link interno</a>
+    <h3>links para download</h3>
+        <a href="https://bit.ly/manual-ddj2" target="_blank" download="meulivro.pdf" type="aplication/pdf">clique aqui para baixar livro</a>
+    <h1>mídias html5</h1>
+    <h2>imagens dinâmicas</h2>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/monalisap.jpg" type="image/jpg">
+        <source media="(max-width:1000px )" srcset="imagens/monam.jpg" type="image/jpg">
+        <img src="imagens/monag.jpg" alt="monalisa">
+    </picture>
+    <h2>videos</h2>
+    <h3>teg &lt;video&gt;</h3>
+    <p>(não é recomendado armazenar videos dentro do proprio site, pois o site ficará muito pesado)</p>
+    <video controls style="height:fit-content">
+       <source src="midias/noite.m4v" type="video/m4v">
+       <source src="midias/noite.webm" type="video/webm">
+       <p>seu navegador não reproduz videos</p>
+    </video>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>ajuste de imagem da monalisa em IA:</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/monalisap.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="imagens/monam.jpg" type="image/jpg">
+       <img src="imagens/monag.jpg" alt="imagem da obra monalisa feita por ia">
+    </picture>
+    <h1>adicionando áudios html5</h1>
+    <p>voz da monalisa criada por inteligencia artificial</p>
+    <audio controls>
+        <source src="audio/vozmonalisa.mp3" type="audio/mpeg"> <!--o navegador rodará a opção de formato seguinte caso não consiga reproduzir-->
+        <source src="audio/vozmonalisa.ogg" type="audio/ogg">
+        <source src="audio/vozmonalisa.wav" type="audio/wav">
+        <p>seu navegador não é compativel com esse tipo de aúdio. <a href="audio/vozmonalisa.mp3" target="_blank">faça o donwload do arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
