@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estilizando tabelas</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        .content{
+            background-color:darkgrey;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <colgroup>
+            <col class="content">
+            <col class="">
+            <col class="">
+            <col class="">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>Maria Jose</td>
+            <td>F</td>
+            <td>32</td>
+            <td>professora</td>
+        </tr>
+        <tr>
+            <td>Vitor Correa</td>
+            <td>M</td>
+            <td>33</td>
+            <td>engenheiro</td>
+        </tr>
+        <tr>
+            <td>Ramses</td>
+            <td>M</td>
+            <td>20</td>
+            <td>strimer</td>
+        </tr>
+        <tr>
+            <td>Ronan</td>
+            <td>M</td>
+            <td>67</td>
+            <td>professor</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>32</td>
+            <td>guia turistico</td>
+        </tr>
+        <tr>
+            <td>Maria da Lurdes</td>
+            <td>F</td>
+            <td>32</td>
+            <td>advogada</td>
+        </tr>
+    </table>
+</body>
+</html>
