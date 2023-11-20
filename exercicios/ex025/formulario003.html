@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>terceiro formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <h1>diário de notas</h1>
+    <form action="#" method="get">
+        <p><label for="inome">nome do aluno: </label>
+        <input type="text" name="nome" id="inome" minlength="10" required></p>
+        <p>
+            <label for="inumero">número de matrícula: </label><input type="number" name="numero" id="inumero" maxlength="5" minlength="5" size="5" required>
+        </p><p>
+            <label for="imateria">componente curricular: </label> <input type="text" name="materia" id="imateria" required>
+        </p>
+        <p>
+            <label for="ibimestre">bimestre: </label>
+            <input type="text" name="bimestre" id="ibmestre" required >
+        </p><p class="inline">
+            <label for="idata">data: </label>
+            <input type="date" name="data" id="idata" placeholder="(opcional)">
+        </p><p>
+                <label for="inota">nota:</label>
+                <input type="number" name="nota" id="inota" maxlength="4" minlength="2" value="0" size="4" required>
+        </p><p>
+            <input type="submit" value="enviar formulário">
+        </p><p class="inline">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
 </body>
 </html>
