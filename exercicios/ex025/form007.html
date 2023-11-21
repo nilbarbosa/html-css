@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 07</title>
+</head>
+<body>
+    <h1>preencha com seus dados</h1>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <select name="prof" id="iprof">
+                <option value="">escolha profissão</option>
+                <optgroup label="profissões">
+                    <option>professor</option>
+                    <option>astronalta</option>
+                    <option>enfermeiro</option>
+                    <option>desenvolvedor</option>
+                    <option>escritor</option>
+                </optgroup>
+        </p>
+        <p>
+            </select> <br> <br>
+            <label for="iest">Estado: </label>
+            <input type="text" name="est" id="iest" list="a">
+            <datalist id="a">
+                <option>Minas Gerais</option>
+                <option>Alagoas </option>
+                <option>Tocantíns</option>
+                <option>Sergipe</option>
+                <option>Amazonas</option>
+            </datalist>
+        </p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+
+</body>
+</html>

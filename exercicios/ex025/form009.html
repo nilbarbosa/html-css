@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+        <label for="inum">número: </label>
+        <input type="range" name="num" id="inum" max="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival">5</output>
+
+
+        <p><input type="submit" value="enviar">
+        <input type="reset" value="limpar"></p>
+    </form>
+</body>
+</html>
