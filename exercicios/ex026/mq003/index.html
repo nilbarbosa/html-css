@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medea quary 2</title>
+    <style>
+
+        /*em pé (portraint)*/
+        @media screen and (orientation: portrait) {
+
+        body{
+            background: url(imagens/cev-portrait.jpg);
+            background-position: center bottom;
+            }
+        }
+
+        /*deitado (landscape)*/
+        @media screen and (orientation: landscape){
+
+        body{
+            background: url(imagens/cev-landscape.jpg);
+            background-position: left bottom;
+            }
+        }
+
+        /*tela (configurações gerais)*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        body >h1{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>mude a orientação do seu dispositivo</h1>
+</body>
+</html>

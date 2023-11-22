@@ -1,0 +1,13 @@
+/*estilo para  impressora*/
+*{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+menu{
+    display: none;
+}
+article::after{
+    content: 'artigo escrito para curso do canal Curso Em Vídeo data 21/11/2023';
+}
