@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width:870px){
+    
+    main div.imagem >img{
+    display: block;
+    float: left;
+    position: absolute;
+    left: 190px;
+    }
+    main >fieldset#login{
+        position: relative;
+        left: 200px;
+        overflow: right;
+    }
+    main fieldset#opcao2{
+        position: relative;
+        left: 200px;
+        overflow: right;
+    }
+    main div#dowload{
+        position: relative;
+        left: 200px;
+        overflow: right;
+    }
+}

@@ -1,0 +1,535 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rawline');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+  --fontetitulo: 'Raleway', sans-serif;
+  --fontegeral: 'Rawline', sans-serif;
+
+  --cor-title: #282828;
+  --cormain: #0C326F;
+}
+
+body{
+   
+}
+header{
+    padding: 15px;
+    border: 2px;
+    position: relative;
+    background-color: white;
+    
+}
+
+body article#esquerdo > a>img{
+    width: 70px;
+}
+
+
+body article#esquerdo >div >a{
+    text-decoration: none;
+}
+div#menu >span{
+    color: #1351B4;
+    padding: 25px 0px 0px 0px;
+    position: relative;
+    font-size: 19px;
+}
+div#menu >h1{
+    font-family: var(--fontetitulo);
+    font-weight: 410;
+    font-size: .9em;
+    color: rgb(84, 84, 84);
+    position: relative;
+    left: 28px;
+    bottom: 22px;
+}
+
+body article#esquerdo menu{
+    margin-top: -20px;
+}
+
+body article#esquerdo menu >div#genericos{
+    background-color: rgba(128, 128, 128, 0.17);
+    border: 1px solid rgba(190, 190, 190, 0.78);
+}
+
+body article#esquerdo menu >div#genericos >div >a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-family: var(--fontegeral);
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    padding: 9px;
+    
+}
+
+body article#esquerdo menu >div#genericos >div >a:hover{
+    background-color: var(--cormain);
+    color: rgba(255, 255, 255, 0.963);
+    text-decoration: underline;
+}
+
+body article#esquerdo menu > div#principal{
+    background-color: rgba(128, 128, 128, 0.17);
+    border: 1px solid rgba(190, 190, 190, 0.78);
+    border-top: 0px;
+    padding: 14px 0px 20px 10px;
+}
+
+body article#esquerdo menu >div#principal{
+    height: 30px;
+}
+
+body article#esquerdo menu > div#principal > a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-family: var(--fontegeral);
+    font-weight: 1000;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+
+body article#esquerdo menu >div#principal:hover{
+    background-color: var(--cormain);
+    color: rgba(242, 242, 242, 0.963);
+    text-decoration: underline;
+}
+
+#botao{
+    font-family: var(--fontetitulo);
+    font-size: 17px;
+    color: white;
+    font-weight: 530;
+    border: 0px;
+    background-color: #1351B4;
+    width: 113px;
+    height: 40px;
+    border-radius: 50px ;
+    position: absolute;
+    top: 10px;
+    left: 355px;
+}
+#icone{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 16px;
+    left: 370px;
+    z-index: 1;
+}
+
+#botaopesquisa{
+}
+
+#botaopesquisa >input{
+  
+
+}
+
+#botaopesquisa >span{
+    color: #104ba8;
+    font-size: 29px;
+    margin-left: 430px;
+    margin-top: -42px;
+}
+
+header >nav >article#menu2 >h1{
+    margin: 10px;
+    padding: 5px;
+    font-family: var(--fontegeral);
+    background-color: white;
+    font-size: .8em;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(66, 66, 66, 0.193);
+    text-align: center;
+    word-spacing: 2px;
+}
+
+header >nav >article#menu2 >menu >a{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cormain);
+    font-weight: 550;
+    font-family: var(--fontegeral);
+    word-spacing: 1px;
+    font-size: 16px;
+    
+}
+
+header >nav >article#menu3 >h1{
+    margin: 10px;
+    padding: 5px;
+    font-family: var(--fontegeral);
+    background-color: white;
+    font-size: .8em;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(66, 66, 66, 0.193);
+    text-align: center;
+    word-spacing: 2px;
+}
+
+header >nav >article#menu3 >menu >p{
+   font-family: var(--fontegeral);
+   font-size: 12px;
+   color: rgb(85, 85, 85);
+}
+
+header >nav >article#menu3 >menu >a{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cormain);
+    font-weight: 600;
+    font-family: var(--fontegeral);
+    word-spacing: 1px;
+    
+}
+
+article#conteudo-main{
+    background-color: #f8f8f8f8;
+    padding: 10px;
+
+}
+
+section#link-img >a{
+   display: block;
+   text-align: center;
+   margin: auto;
+   margin: 30px;
+
+}
+
+section#main-img >img{
+    margin: 10px;
+    width: 450px;
+    
+}
+article section#texto-principal >h1{
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(40, 40, 40, 0.901);
+    text-align: center;
+    padding: 30px 0px 10px 0px;
+    margin: 10px;
+    
+}
+article section#texto-principal >p, strong{
+    font-family: var(--fontegeral);
+    font-size: 16px;
+    font-weight: 350;
+    color: rgb(37, 37, 37);
+    padding: 0px;
+    margin: 10px;
+    word-spacing: 1px;
+    line-height: 30px;
+    
+    
+}
+article section#texto-principal >p >strong{
+    font-weight: bolder;
+    color: rgb(99, 99, 99);
+    
+}
+
+article >section#botao-2{
+    padding: 50px 0px 20px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+article >section#botao-2 >a{
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #0C326F;
+    border-radius: 30px;
+    padding: 13px 18px 13px 13px;
+}
+
+article#sistemas-compras{
+    background-color: white;
+    padding: 20px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+article#sistemas-compras >section >h1{
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(40, 40, 40, 0.901);
+    text-align: center;
+   
+}
+
+article#sistemas-compras >section >p{
+    font-size: medium;
+    line-height: 40px;
+    font-family: var(--fontetitulo);
+    font-weight: 600;
+    color: #4f4f4f;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
+
+article#sistemas-compras >section >p >a{
+    font-size: large;
+    text-decoration: none;
+    color: #1351B4;
+    font-weight: 600;
+}
+
+article#sistemas-compras >section#fornecedor-div >fieldset{
+    border: 1px solid rgba(81, 81, 81, 0.38);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+article#sistemas-compras >section#fornecedor-div >fieldset >legend{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 0px 9px 0px 9px;
+}
+
+article#sistemas-compras >section#fornecedor-div >fieldset >img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+article#sistemas-compras >section#fornecedor-div >fieldset >h2{
+    font-family: var(--fontetitulo);
+    font-size: 14px;
+    font-weight: 600;
+    color:#555555;
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 15px;
+    max-width: 400px;
+}
+article#sistemas-compras >section#fornecedor-div >fieldset >p{
+    font-size: 15px;
+    font-family: var(--fontetitulo);
+    font-weight: 500;
+    color: #555555;
+    text-align: justify;
+    padding: 7px 5px 25px 0px; 
+    max-width: 400px;  
+}
+
+article#sistemas-compras >div#botao-4{
+    padding: 10px 0px 20px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+article#sistemas-compras >div#botao-4 >a{
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #0C326F;
+    border-radius: 30px;
+    padding: 13px 13px 13px 13px;
+}
+
+article#sistemas-compras > section#op-div > fieldset {
+    border: 1px solid rgba(81, 81, 81, 0.38);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+article#sistemas-compras > section#op-div > fieldset > legend {
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 4px 9px 0px 9px;
+}
+
+article#sistemas-compras > section#op-div > fieldset > img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+article#sistemas-compras > section#op-div > fieldset > h2 {
+    font-family: var(--fontetitulo);
+    font-size: 14px;
+    font-weight: 600;
+    color: #555555;
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 15px;
+    max-width: 400px;
+}
+
+article#sistemas-compras > section#op-div > fieldset > p {
+    font-size: 15px;
+    font-family: var(--fontetitulo);
+    font-weight: 500;
+    color: #555555;
+    text-align: justify;
+    padding: 7px 5px 25px 0px;
+    max-width: 400px;
+}
+
+article#sistemas-compras > div#botao-5 {
+    padding: 10px 0px 20px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+article#sistemas-compras > div#botao-5 > a {
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #0C326F;
+    border-radius: 30px;
+    padding: 13px 13px 13px 13px;
+}
+
+article#novidades{
+    margin: 10px;
+    padding: 10px;
+    background-color: #f8f8f8f8;
+}
+
+article#novidades section >a{
+    text-decoration: none;
+}
+
+article#novidades section >a >h1{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 20px 9px 10px 9px;
+}
+
+article#novidades section >a >h1:hover{
+    text-decoration: underline black;
+}
+
+/* Estilos para as imagens dentro dos links */
+article#novidades section > div#img-link > a > img {
+    display: block;
+    margin: auto;
+    padding: 10px 20px 0px 20px;
+}
+
+/* Estilos para os links */
+article#novidades section > div#img-link > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0px 0px 30px 0px;
+}
+
+/* Estilos para o hover nos links */
+article#novidades section > div#img-link > a:hover {
+    text-decoration: underline #104ba8;
+}
+
+article#consultar-oportunidades{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+article#consultar-oportunidades >h1{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 0.988);
+    padding-bottom: 10px;
+}
+
+article#consultar-oportunidades >div >fieldset {
+    border: 1px solid rgba(81, 81, 81, 0.38);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-decoration: none;
+}
+
+
+article#consultar-oportunidades >div >fieldset > legend {
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 4px 9px 0px 9px;
+    text-decoration: none;
+}
+
+article#consultar-oportunidades >div >fieldset >a >section{
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+article#consultar-oportunidades >div >fieldset >a >section >div{
+    text-align: center;
+    margin: auto;
+    color: #0C326F;
+    background-color: #f8f8f8f8;
+    border: 1px solid rgba(164, 164, 164, 0.141);
+    box-shadow: 1px 2px 6px rgba(92, 92, 92, 0.218);
+    border-radius: 5px;
+    height: 210px;
+    width: 220px;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+article#consultar-oportunidades >div >fieldset >a >section >div:hover{
+    background-color: #0062ff2b;
+}
+
+article#consultar-oportunidades >div >fieldset >a >section >div >p {
+    font-family: var(--fontegeral);
+    text-align: center;
+    text-decoration: none;
+    color: #0C326F;
+    font-size: 20px;
+    font-weight: 500;
+    
+
+}

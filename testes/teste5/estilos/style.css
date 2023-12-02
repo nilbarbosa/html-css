@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+main, body{
+    padding:10px 10px 10px 10px;
+    margin:10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main >fieldset#login{
+    width: 330px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 10px 10px 5px;
+    border-color: rgba(147, 147, 147, 0.323);
+    border-width: 1px;
+   
+   
+}
+main div.imagem >img{
+    display: none;
+}
+main >fieldset#login >img{
+  
+    width: 200px;
+    height: auto;
+    margin: -35px 10px -37px 10px;
+    text-align: center;
+    
+}
+main >fieldset#login >p{
+    padding: 10px  10px 37px 10px ;
+    text-align: center;
+    font-size: .9em;
+    color: gray;
+    border-bottom: 1px solid rgba(201, 201, 201, 0.394);
+}
+main div#contas{
+    position: relative;
+    margin: 5px 10px 5px 10px;
+    padding: 0px 15px 5px 5px;
+    text-align: left;
+}
+main >fieldset#login >#contas >p >a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: .9em;
+    text-align: center;
+}
+main >fieldset#login >div#contas >P >input.botao{
+    position: absolute;
+    left: 245px;
+    bottom: 5px;
+    background-color: #2395ff;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-size: 1em;
+    width: 73px;
+    height: 30px;
+}
+main fieldset#opcao2{
+    border-color: rgba(128, 128, 128, 0.323);
+    border-width: 1px;
+    text-decoration: none;
+    padding: 20px;
+    height: 30px;
+    width: 307px;
+    margin: auto;
+    text-align: center;
+}
+main fieldset#opcao2 >p{
+    display: inline;
+    font-size: 0.9em;
+    margin: 0%;
+    padding: 0%;
+    word-spacing: -3px;
+        
+}
+main fieldset#opcao2 >a{
+    text-align: center;
+    font-size: 0.9em;
+    display: inline;
+    text-decoration: none;
+    color: #1f8ef5;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+   
+}
+main div#dowload{
+    text-align: center;
+}
+main >div#dowload >p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: .9em;
+}
+main div#dowload >div >a{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 0px 0px 4px;
+   
+}
+main >div#dowload >div >a >img{
+   width: 140px;
+   margin: 0px;
+   padding: 0px;
+}
+footer >div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    word-spacing: 9px;
+    padding: 15px;
+    color: rgb(128, 128, 128);
+    
+}
+footer > div>a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: .8em;
+    
+}
+footer >div >a.externo:hover{
+   text-decoration: underline;
+}
+footer p{
+    font-size: .8em;
+}

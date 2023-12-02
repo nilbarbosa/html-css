@@ -1,0 +1,41 @@
+
+/* - ++resource++govbr.policy/canais.css - */
+@media screen {
+/* https://www.gov.br/compras/portal_css/++resource++govbr.policy/canais.css?original=1 */
+.field input[type="text"][name="govbr.tile.canais.title"],
+.field input[type="text"][name="govbr.tile.canais.description"],
+.field input[type="text"][name="govbr.tile.canais.description_denuncia"],
+.field input[type="text"][name="govbr.tile.canais.description_solicitacao"],
+.field input[type="text"][name="govbr.tile.canais.description_sugestao"],
+.field input[type="text"][name="govbr.tile.canais.description_elogio"],
+#govbr-tile-canais-description {
+width: 95% !important;
+}
+}
+
+
+/* - ++resource++govbr.policy/controlpanel.css - */
+@media screen {
+/* https://www.gov.br/compras/portal_css/++resource++govbr.policy/controlpanel.css?original=1 */
+.template-site-controlpanel .field input[type="text"][size]{
+width: 100% !important;
+}
+.portaltype-collective-nitf-content #formfield-form-widgets-ICategoria-categoria {
+position: relative;
+}
+.portal-govbr.template-collective-nitf-content #formfield-form-widgets-ICategoriaType-categoria,
+.portal-govbr.portaltype-collective-nitf-content #formfield-form-widgets-ICategoria-categoria,
+.portal-govbr.portaltype-collective-nitf-content #formfield-form-widgets-ICategoriaType-categoria {
+position: relative;
+}
+.portal-govbr.template-collective-nitf-content #formfield-form-widgets-ICategoriaType-categoria::after,
+.portal-govbr.portaltype-collective-nitf-content #formfield-form-widgets-ICategoria-categoria::after,
+.portal-govbr.portaltype-collective-nitf-content #formfield-form-widgets-ICategoriaType-categoria::after {
+content: "■";
+color: Red;
+position: absolute;
+top: -1px;
+left: 85px;
+}
+}
+
