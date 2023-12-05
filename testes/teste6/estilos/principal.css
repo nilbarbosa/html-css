@@ -34,12 +34,23 @@ body article#esquerdo > a>img{
 body article#esquerdo >div >a{
     text-decoration: none;
 }
+
+article#esquerdo >div >menu{
+   display: none;
+}
+
 div#menu >span{
     color: #1351B4;
     padding: 25px 0px 0px 0px;
     position: relative;
-    font-size: 19px;
+    font-size: 19px;cursor: pointer;
 }
+
+div#menu >span:hover{
+    color: #0a2d66;
+   
+}
+
 div#menu >h1{
     font-family: var(--fontetitulo);
     font-weight: 410;
@@ -50,52 +61,63 @@ div#menu >h1{
     bottom: 22px;
 }
 
-body article#esquerdo menu{
-    margin-top: -20px;
+body article#esquerdo menu#itens{
+   margin: -15px;
+   padding: -10px;
 }
 
 body article#esquerdo menu >div#genericos{
     background-color: rgba(128, 128, 128, 0.17);
     border: 1px solid rgba(190, 190, 190, 0.78);
+    padding: 10px 0px 20px 0px;
 }
 
 body article#esquerdo menu >div#genericos >div >a{
     display: inline-block;
+    position: relative;
     text-decoration: none;
     color: rgb(39, 39, 39);
     font-family: var(--fontegeral);
     font-weight: 500;
     width: 100%;
-    height: 35px;
-    padding: 9px;
+    height: 17px;
+    padding: 9px 0px 10px 10px;
     
 }
 
-body article#esquerdo menu >div#genericos >div >a:hover{
+body article#esquerdo menu >div#genericos >div >a >span{
+    color: rgb(39, 39, 39);
+    font-size:12px;
+    position: absolute;
+    top: -7px;
+    left: 455px;
+}
+
+body article#esquerdo menu >div#genericos >div >a >span:hover{
+ color: white;
+}
+
+body article#esquerdo menu >div#genericos >div >a:hover {
     background-color: var(--cormain);
     color: rgba(255, 255, 255, 0.963);
     text-decoration: underline;
 }
 
-body article#esquerdo menu > div#principal{
-    background-color: rgba(128, 128, 128, 0.17);
-    border: 1px solid rgba(190, 190, 190, 0.78);
-    border-top: 0px;
-    padding: 14px 0px 20px 10px;
-}
 
 body article#esquerdo menu >div#principal{
-    height: 30px;
+    background-color: rgba(128, 128, 128, 0.17);
+    padding: 20px 10px 20px 10px;
 }
 
 body article#esquerdo menu > div#principal > a {
     display: inline-block;
     text-decoration: none;
-    color: rgb(39, 39, 39);
+    color: #767676;
     font-family: var(--fontegeral);
+    font-size: 20px;
     font-weight: 1000;
-    height: 60%;
-    box-sizing: border-box;
+    margin: 5px;
+   
 }
 
 
@@ -131,42 +153,74 @@ body article#esquerdo menu >div#principal:hover{
 }
 
 #botaopesquisa >input{
-  
+  background-color: white;
 
 }
 
-#botaopesquisa >span{
-    color: #104ba8;
+article#menu2{
+    
+   
+}
+
+article#menu2 >h1 >span{
+    position: absolute;
+    top: -4px;
+    left: 265px;
+    color: #1351B4;
+    padding: 0px 0px 0px 0px;
     font-size: 29px;
-    margin-left: 430px;
-    margin-top: -42px;
+    cursor: pointer;
+    
+}
+
+article#menu2 >menu#itens2{
+    display: none;
+    border-radius: 3px;
+    margin-top: -40px;
+   box-shadow: 1px 1px 5px rgba(53, 53, 53, 0.192);
 }
 
 header >nav >article#menu2 >h1{
+    position: relative;
     margin: 10px;
-    padding: 5px;
+    padding: 5px 0px 5px 30px;
     font-family: var(--fontegeral);
     background-color: white;
     font-size: .8em;
     width: 300px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(66, 66, 66, 0.193);
-    text-align: center;
+    text-align: left;
     word-spacing: 2px;
 }
 
-header >nav >article#menu2 >menu >a{
+header >nav >article#menu2 >menu >p{
+    position: relative;
+    top: 40px;
+    font-family: var(--fontegeral);
+    color: #E6E6E6;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+header >nav >article#menu2 >menu >p >a{
+    position: absolute;
     display: block;
     margin: 10px;
-    padding: 5px;
+    padding: 5px 0px 10px 15px;
     text-decoration: none;
     color: var(--cormain);
     font-weight: 550;
     font-family: var(--fontegeral);
     word-spacing: 1px;
     font-size: 16px;
+    border-bottom: 1px solid rgba(81, 81, 81, 0.38);
+    cursor: pointer;
     
 }
+
 
 header >nav >article#menu3 >h1{
     margin: 10px;
@@ -179,6 +233,10 @@ header >nav >article#menu3 >h1{
     box-shadow: 0px 4px 4px rgba(66, 66, 66, 0.193);
     text-align: center;
     word-spacing: 2px;
+}
+
+header >nav >article#menu3 >h1 >span{
+    
 }
 
 header >nav >article#menu3 >menu >p{
@@ -512,7 +570,7 @@ article#consultar-oportunidades >div >fieldset >a >section >div{
     border: 1px solid rgba(164, 164, 164, 0.141);
     box-shadow: 1px 2px 6px rgba(92, 92, 92, 0.218);
     border-radius: 5px;
-    height: 210px;
+    height: 200px;
     width: 220px;
     padding: 20px;
     text-decoration: none;
@@ -529,7 +587,496 @@ article#consultar-oportunidades >div >fieldset >a >section >div >p {
     text-decoration: none;
     color: #0C326F;
     font-size: 20px;
-    font-weight: 500;
-    
+    font-weight: 500;   
 
+}
+
+.material-symbols-outlined {
+    font-size: 60px; 
+    padding-top: 15px;
+    margin: 5px;
+}
+
+div#botao-6 {
+        padding: 15px 0px 0px 0px;
+        margin: 10px;
+        text-align: center;
+}
+
+div#botao-6 > a {
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #0C326F;
+    border-radius: 30px;
+    padding: 13px 13px 13px 13px;
+}
+
+article#numeros{
+    background-color:#071D41;
+    padding: 20px;
+    color: white;
+}
+
+article#numeros >h1{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+
+article#numeros >h2{
+    text-align: center;
+    font-family: var(--fontegeral);
+    font-size: 55px;
+    font-weight: 1000;
+    color: white;
+    padding: 36px 0px 20px 0px;
+}
+
+article#numeros >p{
+    font-size: 20px;
+    font-family: var(--fontegeral);
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+div#botao-7 {
+    padding: 50px 0px 20px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+div#botao-7 > a {
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 13px 23px 13px 23px;
+}
+
+div#botao-7 > a:hover {
+    background-color: #053e9a;
+    border-color: #053e9a;
+}
+
+article section#comunicados-div {
+   padding: 5px;
+   margin: 5px;
+  
+}
+
+article section#comunicados-div >fieldset {
+    border: 1px solid rgba(81, 81, 81, 0.38);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-decoration: none;
+   
+}
+
+article section#comunicados-div >fieldset >legend{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 10px;
+    text-decoration: none;
+   
+}
+
+article section#comunicados-div >fieldset >a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--fontetitulo);
+    color: #002869;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+}
+
+article section#comunicados-div >fieldset >p{
+    font-family: var(--fontegeral);
+    color: rgb(38, 38, 38);
+    font-size: 15px;
+    padding: 10px 0px 30px 0px;
+
+}
+
+article section#comunicados-div >fieldset >a:hover{
+    color: #1351B4;
+    text-decoration: underline;
+}
+
+div#botao-8 {
+    padding: 15px 0px 0px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+div#botao-8 > a {
+text-decoration: none;
+font-family: var(--fontegeral);
+color: var(--cormain);
+font-weight: 600;
+font-size: 16px;
+border: 1px solid #0C326F;
+border-radius: 30px;
+padding: 13px 20px 13px 20px;
+}
+
+div#botao-8 > a:hover {
+    color: white;
+    background-color: #1351B4;
+    transition-duration: 3ms;
+
+}
+
+article section#comunicados-div {
+   padding: 5px;
+   margin: 5px;
+  
+}
+
+article section#comunicados-div >fieldset {
+    border: 1px solid rgba(81, 81, 81, 0.38);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-decoration: none;
+   
+}
+
+article section#comunicados-div >fieldset >legend{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 10px;
+    text-decoration: none;
+   
+}
+
+article section#comunicados-div >fieldset >a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--fontetitulo);
+    color: #002869;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+}
+
+article section#comunicados-div >fieldset >p{
+    font-family: var(--fontegeral);
+    color: rgb(38, 38, 38);
+    font-size: 15px;
+    padding: 10px 0px 30px 0px;
+
+}
+
+article section#comunicados-div >fieldset >a:hover{
+    color: #1351B4;
+    text-decoration: underline;
+}
+
+div#botao-8 {
+    padding: 15px 0px 0px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+div#botao-8 > a {
+text-decoration: none;
+font-family: var(--fontegeral);
+color: var(--cormain);
+font-weight: 600;
+font-size: 16px;
+border: 1px solid #0C326F;
+border-radius: 30px;
+padding: 13px 20px 13px 20px;
+}
+
+div#botao-8 > a:hover {
+    color: white;
+    background-color: #1351B4;
+    transition-duration: 3ms;
+
+}
+
+1111
+
+article section#noticias-div {
+    padding: 5px;
+    margin: 5px;
+   
+ }
+ 
+ article section#noticias-div >fieldset {
+     border: 1px solid rgba(81, 81, 81, 0.38);
+     border-bottom: 0px;
+     border-left: 0px;
+     border-right: 0px;
+     text-decoration: none;
+    
+ }
+ 
+ article section#noticias-div >fieldset >legend{
+     text-align: center;
+     font-family: var(--fontetitulo);
+     font-size: 16px;
+     font-weight: 700;
+     color: rgba(38, 38, 38, 0.901);
+     padding: 10px;
+     text-decoration: none;
+    
+ }
+ 
+ article section#noticias-div >fieldset >a{
+     display: inline-block;
+     text-decoration: none;
+     font-family: var(--fontetitulo);
+     color: #002869;
+     font-size: 20px;
+     font-weight: 600;
+     padding: 10px 0px 0px 5px;
+     margin-left: 5px;
+ }
+ 
+ article section#noticias-div >fieldset >p{
+     font-family: var(--fontegeral);
+     color: rgb(38, 38, 38);
+     font-size: 15px;
+     padding: 10px 0px 30px 5px;
+     margin-left: 5px;
+ 
+ }
+ 
+ article section#noticias-div >fieldset >a:hover{
+     color: #1351B4;
+     text-decoration: underline;
+ }
+ 
+ div#botao-9 {
+     padding: 15px 0px 10px 0px;
+     margin: 10px;
+     text-align: center;
+ }
+ 
+ div#botao-9 > a {
+ text-decoration: none;
+ font-family: var(--fontegeral);
+ color: var(--cormain);
+ font-weight: 600;
+ font-size: 16px;
+ border: 1px solid #0C326F;
+ border-radius: 30px;
+ padding: 13px 20px 13px 20px;
+ }
+ 
+ div#botao-9 > a:hover {
+     color: white;
+     background-color: #1351B4;
+     transition-duration: 3ms;
+ 
+ }
+
+ 1111
+
+ article section#eventos-div {
+    text-align: center;
+    margin: 5px;    
+ }
+ 
+ article section#eventos-div >fieldset {
+     border: 1px solid rgba(81, 81, 81, 0.38);
+     border-bottom: 0px;
+     border-left: 0px;
+     border-right: 0px;
+     text-decoration: none;
+    
+ }
+ 
+ article section#eventos-div >fieldset >legend{
+     text-align: center;
+     font-family: var(--fontetitulo);
+     font-size: 16px;
+     font-weight: 700;
+     color: rgba(38, 38, 38, 0.901);
+     padding: 10px;
+     text-decoration: none;
+    
+ }
+ 
+ article section#eventos-div >fieldset >a{
+     display: inline-block;
+     text-decoration: none;
+     font-family: var(--fontetitulo);
+     color: #002869;
+     font-size: 20px;
+     font-weight: 600;
+     padding: 10px 0px 0px 5px;
+     margin-left: 5px;
+ }
+ 
+ article section#eventos-div >fieldset >p{
+     font-family: var(--fontegeral);
+     color: rgb(38, 38, 38);
+     font-size: 14px;
+     font-weight: 600;
+     padding: 10px 0px 10px 5px;
+     margin-left: 5px;
+ 
+ }
+ 
+ article section#eventos-div >fieldset >a:hover{
+     color: #1351B4;
+     text-decoration: underline;
+ }
+ 
+ div#botao-10 {
+     padding: 40px 0px 40px 0px;
+     margin: 10px;
+     text-align: center;
+ }
+ 
+ div#botao-10 > a {
+ text-decoration: none;
+ font-family: var(--fontegeral);
+ color: var(--cormain);
+ font-weight: 600;
+ font-size: 16px;
+ border: 1px solid #0C326F;
+ border-radius: 30px;
+ padding: 13px 20px 13px 20px;
+ }
+ 
+ div#botao-10 > a:hover {
+     color: white;
+     background-color: #1351B4;
+     transition-duration: 3ms;
+ 
+ }
+
+
+ 1111
+
+ article#canais-atendimento{
+    margin: 10px;
+    padding: 10px;
+    background-color: #ef0000f8;
+}
+
+article#canais-atendimento >a{
+    text-decoration: none;
+    background-color: #1351B4;
+}
+
+article#canais-atendimento div >h1{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 0.901);
+    padding: 20px 0px 10px 0px;
+}
+
+article#canais-atendimento div >h1:hover{
+    text-decoration: underline black;
+}
+
+/* Estilos para as imagens dentro dos links */
+article#canais-atendimento div >a >img {
+    display: block;
+    margin: auto;
+}
+
+/* Estilos para os links */
+article#canais-atendimento div >a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    color: var(--cormain);
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Estilos para o hover nos links */
+article#canais-atendimento div >a:hover {
+    text-decoration: underline #104ba8;
+}
+
+
+article#gov-br{
+    background-color:#071D41;
+    color: white;
+}
+
+article#gov-br >h1{
+    margin: 15px;
+    padding: 40px 15px 40px 15px ;
+    text-align: left;
+    font-family: var(--fontegeral);
+    font-size: 55px;
+    font-weight: 1000;
+    color: white;
+    padding: 36px 0px 20px 0px;
+
+}
+
+article#gov-br nav{
+    margin: 10px;
+    padding: 10px;
+}
+
+article#gov-br nav >section#mais-topicos >h2{
+    font-family: var(--fontegeral);
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+article#gov-br >nav >section#redes-sociais >h2{
+    font-family: var(--fontetitulo);
+    font-size: 17px;
+    padding: 40px 0px 10px 0px;
+}
+
+article#gov-br >nav >section#redes-sociais >div#img{
+    padding-bottom: 30px;
+}
+
+footer{
+    margin-top: -10px;
+    padding: 20px;
+    background-color: #00112c;
+    text-align: center;
+
+}
+footer >p{
+    font-family: var(--fontegeral);
+    font-size: small;
+    color:#CCCCCC;
+    line-height: 25px;
+}
+
+footer >p >a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }

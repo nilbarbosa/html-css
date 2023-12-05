@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <link rel="stylesheet" href="estilos/principal.css">
     <title>compras.gov.br - o maior site de pesquisas públicas d pais</title>
 </head>
@@ -15,19 +16,55 @@
                 <a href="#"><img src="imagens/Gov.br_logo.svg.png" alt="logo gov.br"></a>
                 <div>
                     <div id="menu" >
-                        <span class="material-icons md-18">menu</span> <h1>Portal de Compras do Governo Federal</h1>
+                        <span class="material-icons md-18" onclick="clickMenu()">menu</span> 
+                        <h1>Portal de Compras do Governo Federal</h1>
                     </div>
-                    <div id="botaopesquisa">
-                        <span class="material-icons md-18">search</span>
-                        <input type="search" name="busca" id="ibusca" >
-                    </div>
-                    <menu>
+        
+                    <menu id="itens">
                         <div id="genericos">
-                            <div><a href="#">Orgãos do Governo</a> <br></div>
-                            <div><a href="#">Acesso a informação</a> <br></div>
-                            <div><a href="#">Legislação</a> <br></div>
-                            <div><a href="#">Acessibilidade</a> <br></div>
-                        </div>
+                            <div>
+                                <a href="#">Aceso a informação 
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">Fornecedor
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">Agente público
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">Cidadão
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">Sistemas
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">Canais de Atendimento
+                                    <span
+                                        class="material-symbols-outlined"> arrow_forward_ios
+                                    </span> 
+                                </a>
+                            </div>
+                            </div>
                         <div id="principal">
                             <a href="#">gov.br</a>
                         </div>
@@ -43,14 +80,15 @@
                 </div>
             </article>
             <article id="menu2">
-                <h1>&#x1F525; serviços mais acessados do gov.br</h1>
-                <menu>
-                    <a href="#">Consultar restrição do imposto de renda</a>
-                    <a href="#">Consultar CPF</a>
-                    <a href="#">Consultar dividas e pendências fiscais</a>
-                    <a href="#">Consultar CNPJ</a>
-                    <a href="#">Emitir certidão de regularidade fiscal</a>
-                    <a href="#">Obter a carteira de trabalho</a>
+                <h1>&#x1F525; serviços mais acessados do gov.br <span class="material-symbols-outlined" onclick="clickMenu2()">expand_more
+                </span> </h1> 
+                <menu id="itens2">
+                    <p>1 <a href="#">Consultar restrição do imposto de renda</a></p>
+                    <p>2 <a href="#">Consultar CPF</a></p>
+                    <p>3 <a href="#">Consultar dividas e pendências fiscais</a></p>
+                    <p>4 <a href="#">Consultar CNPJ</a></p>
+                    <p>5 <a href="#">Emitir certidão de regularidade fiscal</a></p>
+                    <p>6 <a href="#">Obter a carteira de trabalho</a></p>
                 </menu>
             </article>
             <article id="menu3">
@@ -147,33 +185,55 @@
             <fieldset>
                 <legend>NLLC (A PARTIR DE 01/04/2023)</legend>
                 <legend>LEI 8.666 | 10.520 | 12.462 | 14.133 ATÉ 31/03/2023</legend>
-                <a href="#">
+                <a class="no-decoration" href="#">
                     <section>
-                        <div><p>Contratações pela lei 14.133 a partir de 01/04/2023</p></div>
+                        <div>
+                            <span 
+                                class="material-symbols-outlined">
+                                developer_guide
+                            </span>
+                            <p>Contratações pela lei 14.133 a partir de 01/04/2023</p>
+                        </div>
                     </section>
                 </a>   
                 <a href="#">
                     <section>
-                        <div><p>Ata Registro de Preço pela lei 14.133</p></div>
+                        <div> 
+                            <span class="material-symbols-outlined">request_quote
+                            </span>
+                            <p>Ata Registro de Preço pela lei 14.133</p>
+                        </div>
                     </section>
                 </a>
                 <a href="#">
                     <section>
-                        <div><p>Pregões abertos para lances</p></div>
+                        <div> 
+                            <span 
+                                class="material-symbols-outlined">
+                                gavel
+                            </span>
+                            <p>Pregões abertos para lances</p>
+                        </div>
                     </section>
                 </a>
                 <a href="#">
                     <section>
-                        <div><p>Cotações e Dispensas Abertas Para propostas</p></div>
+                        <div>
+                            <span
+                                class="material-symbols-outlined">
+                                shopping_basket
+                            </span>
+                            <p>Cotações e Dispensas Abertas Para propostas</p>
+                        </div>
                     </section>
                 </a>
             </fieldset>
         </div>
-        <div>
+        <div id="botao-6">
             <a href="#">Outras consultas</a>
         </div>
     </article>
-    <article>
+    <article id="numeros">
         <h1>Compras homologadas 1º semestre de 2023</h1>
         <h2>R$59bi</h2>
         <p>Valor Homologado em Compras</p>
@@ -181,52 +241,69 @@
         <p>Valor Homologado em Compras para ME/EPP</p>
         <h2>66mil</h2>
         <p>Processos de Compras Homologados</p>
-
-        <a href="#">Mais Números</a>
+        <div id="botao-7">
+            <a href="#">Mais Números</a>
+        </div>
     </article>
     <article>
-        <fieldset>
-            <legend>COMUNICADOS</legend>
-            <a href="#">nº 11/2023 - instabilidade no Gov.Br</a>
-            <p>17/10/2023</p>
-            <a href="#">Nº 10/2023 - Suspensão de abertura de processos de concentrações</a>
-            <p>04/10/2023</p>
-            <a href="#">Nº 09/2023 - Instabilidades no Sistema de Compras.gov.br</a>
-            <p>04/10/2023</p>
-            <a href="#">Mais Comunicados</a>
-        </fieldset>
-        <fieldset>
-            <legend>NOTÍCIAS</legend>
-            <a href="#">Ministério da Gestão e AGU lançam guia de procedimentos para contratações de obras e serviços de engenharia</a>
-            <p>24/11/2023</p>
-            <a href="#">Gestão integra o Sistema de Cadastro de Fornecedores ao Banco de Sanções da Controladoria-Geral da União</a>
-            <p>21/11/2023</p>
-            <a href="#">O Sicaf passará por uma breve manutenção neste fim de semana.</a>
-            <p>16/11/2023</p>
-            <a href="#">Mais Notícias</a>
-        </fieldset>
-        <fieldset>
-            <legend>EVENTOS</legend>
-            <p>WEBLINKAR</p>
-            <a href="#">Integração Sicaf ao Banco de Sanções - CGU</a>
-            <p>WEBLINKAR</p>
-            <a href="#">Novo Sistema de Divulgação de Contratações</a>
-            <p>WEBLINKAR</p>
-            <a href="#">PNCP em Dados Abertos</a>
-        </fieldset>
+        <section id="comunicados-div">
+            <fieldset>
+                <legend>COMUNICADOS</legend>
+                    <a href="#">nº 11/2023 - instabilidade no Gov.Br</a> 
+                    <p>17/10/2023</p>
+                    <a href="#">Nº 10/2023 - Suspensão de abertura de processos de concentrações</a>
+                    <p>04/10/2023</p>
+                    <a href="#">Nº 09/2023 - Instabilidades no Sistema de Compras.gov.br</a>
+                    <p>04/10/2023</p>
+                    <div id="botao-8">
+                        <a href="#">Mais Comunicados</a>
+                    </div>
+               
+            </fieldset>
+        </section>
+        <section id="noticias-div">
+            <fieldset>
+                <legend>NOTÍCIAS</legend>
+                <a href="#">Ministério da Gestão e AGU lançam guia de procedimentos para contratações de obras e serviços de engenharia</a>
+                <p>24/11/2023</p>
+                <a href="#">Gestão integra o Sistema de Cadastro de Fornecedores ao Banco de Sanções da Controladoria-Geral da União</a>
+                <p>21/11/2023</p>
+                <a href="#">O Sicaf passará por uma breve manutenção neste fim de semana.</a>
+                <p>16/11/2023</p>
+                <div id="botao-9">
+                    <a href="#">Mais Notícias</a>
+                </div>
+            </fieldset>
+        </section>
+        <section id="eventos-div">
+            <fieldset>
+                <legend>EVENTOS</legend>
+                <p>WEBINAR</p>
+                <a href="#">Integração Sicaf ao Banco de Sanções - CGU</a>
+                <p>WEBINAR</p>
+                <a href="#">Novo Sistema de Divulgação de Contratações</a>
+                <p>WEBINAR</p>
+                <a href="#">PNCP em Dados Abertos</a>
+            </fieldset>
+            <div id="botao-10">
+                <a href="#">Mais eventos</a>
+            </div>
+        </section>
     </article>
-    <article>
-        <h1>canais de atendimento</h1>
-        <a href="#"><img src="imagens/fsr.png" alt="icone reclamações">ormulário Sugestões e Reclamações</a>
-        <a href="#"><img src="imagens/cda.png" alt="cental de atendimento icone">Central De Atendimento</a>
-        <a href="#"><img src="imagens/normativoimg.png" alt="normativo icone">Normativo</a>
-        <a href="#"><img src="imagens/denuncia.png" alt="icone denúncia">Denúncia</a>
-        <a href="#"><img src="imagens/elogioimg.png" alt="like icone">Elogio</a>
+    <article id="canais-atendimento">
+        <div>
+            <h1>canais de atendimento</h1>
+            <a href="#"><img src="imagens/fsr.png" alt="icone reclamações">ormulário Sugestões e Reclamações</a>
+            <a href="#"><img src="imagens/cda.png" alt="cental de atendimento icone">Central De Atendimento</a>
+            <a href="#"><img src="imagens/normativoimg.png" alt="normativo icone">Normativo</a>
+            <a href="#"><img src="imagens/denuncia.png" alt="icone denúncia">Denúncia</a>
+            <a href="#"><img src="imagens/elogioimg.png" alt="like icone">Elogio</a>
+        </div>
     </article>
-    <article>
+    <article id="gov-br">
         <h1>gov.br</h1>
         <nav>
-            <section>
+            <section id="mais-topicos">
                 <h2>ACESSO Á INFORMAÇÃO</h2>
                 <menu>
                     <a href="#">campo-teste</a>
@@ -304,19 +381,38 @@
                     <a href="#">campo-teste</a>
                 </menu>
             </section>
-            <section>
-                <div id="nimg">
-                    <h2>redes sociais</h2>
-                    <img src="imagens/Twitter-X-Logo.png" alt="logo twitter">
-                    <img src="imagens/youtubelogo.png" alt="logo youtube">
-                    <img src="imagens/logoinstagram.png" alt="logo instagram">
-                    <img src="imagens/facebooklogo.png" alt="logo facebook">
-                </div>
+            <section id="redes-sociais">
+                    <h2>REDES SOCIAIS</h2>
+                    <div id="img">
+                        <a href="#"><img src="imagens/youtube-logo.png" alt="logo youtube"></a>
+                        <a href="#"><img src="imagens/logoinstagram.png" alt="logo instagram"></a>
+                        <a href=""><img src="imagens/facebooklogo.png" alt="logo facebook"></a>
+                    </div>
             </section>
         </nav>
     </article>
     <footer>
         <p>Todo o conteúdo deste site está publicado sob a licença <a href="#">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
+    <script>
+
+function clickMenu2() {
+            if (itens2.style.display == 'block') {
+                itens2.style.display = 'none'
+            } else {
+                itens2.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
