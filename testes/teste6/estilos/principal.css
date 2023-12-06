@@ -287,11 +287,16 @@ section#link-img >a{
 
 }
 
-section#main-img >img{
-    margin: 10px;
-    width: 450px;
+section#main-img >div{
+    max-width: 450px;
+    min-width: 300px;
     
 }
+
+section#main-img >div >img{
+   width: 100%;
+}
+
 article section#texto-principal >h1{
     font-family: var(--fontetitulo);
     font-size: 24px;
