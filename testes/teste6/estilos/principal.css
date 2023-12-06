@@ -43,7 +43,8 @@ div#menu >span{
     color: #1351B4;
     padding: 25px 0px 0px 0px;
     position: relative;
-    font-size: 19px;cursor: pointer;
+    font-size: 19px;
+    cursor: pointer;
 }
 
 div#menu >span:hover{
@@ -68,7 +69,8 @@ body article#esquerdo menu#itens{
 
 body article#esquerdo menu >div#genericos{
     background-color: rgba(128, 128, 128, 0.17);
-    border: 1px solid rgba(190, 190, 190, 0.78);
+    border-top: 1px solid rgba(190, 190, 190, 0.78);
+    border-bottom: 1px solid rgba(190, 190, 190, 0.78);
     padding: 10px 0px 20px 0px;
 }
 
@@ -90,7 +92,7 @@ body article#esquerdo menu >div#genericos >div >a >span{
     font-size:12px;
     position: absolute;
     top: -7px;
-    left: 455px;
+    left: 440px;
 }
 
 body article#esquerdo menu >div#genericos >div >a >span:hover{
@@ -106,7 +108,8 @@ body article#esquerdo menu >div#genericos >div >a:hover {
 
 body article#esquerdo menu >div#principal{
     background-color: rgba(128, 128, 128, 0.17);
-    padding: 20px 10px 20px 10px;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 40px;
 }
 
 body article#esquerdo menu > div#principal > a {
@@ -116,52 +119,33 @@ body article#esquerdo menu > div#principal > a {
     font-family: var(--fontegeral);
     font-size: 20px;
     font-weight: 1000;
-    margin: 5px;
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0px 10px 10px;
+    position: relative;
    
 }
 
 
-body article#esquerdo menu >div#principal:hover{
+body article#esquerdo menu >div#principal >a:hover{
     background-color: var(--cormain);
     color: rgba(242, 242, 242, 0.963);
     text-decoration: underline;
 }
 
-#botao{
-    font-family: var(--fontetitulo);
-    font-size: 17px;
-    color: white;
-    font-weight: 530;
-    border: 0px;
-    background-color: #1351B4;
-    width: 113px;
-    height: 40px;
-    border-radius: 50px ;
+body article#esquerdo menu >div#principal >a >span{
+    color: rgb(39, 39, 39);
+    font-size:12px;
     position: absolute;
-    top: 10px;
-    left: 355px;
-}
-#icone{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 16px;
-    left: 370px;
-    z-index: 1;
-}
-
-#botaopesquisa{
-}
-
-#botaopesquisa >input{
-  background-color: white;
-
-}
-
-article#menu2{
-    
+    left: 441px;
+    bottom: 5px;
    
 }
 
+body article#esquerdo menu >div#genericos >div >a >span:hover{
+ color: white;
+}
 article#menu2 >h1 >span{
     position: absolute;
     top: -4px;
@@ -173,12 +157,6 @@ article#menu2 >h1 >span{
     
 }
 
-article#menu2 >menu#itens2{
-    display: none;
-    border-radius: 3px;
-    margin-top: -40px;
-   box-shadow: 1px 1px 5px rgba(53, 53, 53, 0.192);
-}
 
 header >nav >article#menu2 >h1{
     position: relative;
@@ -194,67 +172,105 @@ header >nav >article#menu2 >h1{
     word-spacing: 2px;
 }
 
-header >nav >article#menu2 >menu >p{
-    position: relative;
-    top: 40px;
-    font-family: var(--fontegeral);
-    color: #E6E6E6;
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+article#menu2 >menu#itens2{
+    height: 385px;
+    width: 340px;
+    display: none;
+    padding: 40px 5px 0px 5px;
+    border-radius: 6px;
+    margin-top: -37px;
+    box-shadow: 1px 1px 7px rgba(53, 53, 53, 0.192);
+
 }
 
-header >nav >article#menu2 >menu >p >a{
-    position: absolute;
-    display: block;
-    margin: 10px;
-    padding: 5px 0px 10px 15px;
+article#menu2 >menu#itens2 >div >p{
+    font-size: 20px;
+    font-weight: bold;
+    color:  rgba(53, 53, 53, 0.192);;
+}
+
+article#menu2 >menu#itens2 >div >p >a{
+    color: #000;
     text-decoration: none;
-    color: var(--cormain);
-    font-weight: 550;
+    color: #0C326F;
+    font-weight: 600;
+    padding: 20px 0px 10px 5px;
+    font-size: medium;
+   
+}
+
+
+article#menu2 >menu#itens2 >div >p{
     font-family: var(--fontegeral);
-    word-spacing: 1px;
-    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 0px 20px 15px;
     border-bottom: 1px solid rgba(81, 81, 81, 0.38);
+    border-right: 4px;
+   
+
+}
+
+
+article#menu3 >h1 >span{
+    position: absolute;
+    top: -4px;
+    left: 265px;
+    color: #1351B4;
+    padding: 0px 0px 0px 0px;
+    font-size: 29px;
     cursor: pointer;
     
 }
 
 
 header >nav >article#menu3 >h1{
+    position: relative;
     margin: 10px;
-    padding: 5px;
+    padding: 5px 0px 5px 30px;
     font-family: var(--fontegeral);
     background-color: white;
     font-size: .8em;
     width: 300px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(66, 66, 66, 0.193);
-    text-align: center;
+    text-align: left;
     word-spacing: 2px;
 }
 
-header >nav >article#menu3 >h1 >span{
-    
+article#menu3 >menu#itens3{
+    height: 385px;
+    width: 335px;
+    display: none;
+    padding: 40px 5px 1px 15px;
+    border-radius: 6px;
+    margin-top: -37px;
+    box-shadow: 1px 1px 7px rgba(53, 53, 53, 0.192);
+
 }
 
-header >nav >article#menu3 >menu >p{
-   font-family: var(--fontegeral);
-   font-size: 12px;
-   color: rgb(85, 85, 85);
-}
-
-header >nav >article#menu3 >menu >a{
-    display: block;
-    margin: 10px;
-    padding: 5px;
-    text-decoration: none;
-    color: var(--cormain);
-    font-weight: 600;
+article#menu3 >menu#itens3 >div >p{
+    font-size: 12px;
+    font-weight: normal;
+    color:  rgba(53, 53, 53, 0.861);
     font-family: var(--fontegeral);
-    word-spacing: 1px;
+    padding: 10px 5px 10px 0px;
+}
+
+article#menu3 >menu#itens3 >div >a{
+    font-family: var(--fontegeral);
+    text-decoration: none;
+    color: #0C326F;
+    font-weight: 600;
+    font-size: medium;
     
+}
+
+hr.separator {
+    border: 0; 
+    height: 1px;
+    background-color: #ccc; 
+    margin-top: 10px;
+    margin-bottom: 15px; 
 }
 
 article#conteudo-main{
@@ -320,6 +336,14 @@ article >section#botao-2 >a{
     border-radius: 30px;
     padding: 13px 18px 13px 13px;
 }
+
+article >section#botao-2 >a:hover{
+color: white;
+background-color: #1351B4;
+transition-duration: 3ms;
+border: 0px;
+}  
+
 
 article#sistemas-compras{
     background-color: white;
@@ -412,6 +436,13 @@ article#sistemas-compras >div#botao-4 >a{
     padding: 13px 13px 13px 13px;
 }
 
+article#sistemas-compras >div#botao-4 >a:hover{
+    color: white;
+    background-color: #1351B4;
+    transition-duration: 3ms;
+    border: 0px;
+} 
+
 article#sistemas-compras > section#op-div > fieldset {
     border: 1px solid rgba(81, 81, 81, 0.38);
     border-bottom: 0px;
@@ -472,6 +503,13 @@ article#sistemas-compras > div#botao-5 > a {
     padding: 13px 13px 13px 13px;
 }
 
+article#sistemas-compras > div#botao-5 > a:hover {
+    color: white;
+    background-color: #1351B4;
+    transition-duration: 3ms;
+    border: 0px;  
+}
+
 article#novidades{
     margin: 10px;
     padding: 10px;
@@ -521,6 +559,8 @@ article#novidades section > div#img-link > a:hover {
     text-decoration: underline #104ba8;
 }
 
+/* Estilos referente a parte "consultar oportunidades"*/
+
 article#consultar-oportunidades{
     background-color: white;
     margin: 10px;
@@ -556,9 +596,12 @@ article#consultar-oportunidades >div >fieldset > legend {
     text-decoration: none;
 }
 
+article#consultar-oportunidades >div >fieldset >a{
+    text-decoration: none;
+}
+
 article#consultar-oportunidades >div >fieldset >a >section{
     margin: 20px;
-    text-decoration: none;
 
 }
 
@@ -587,7 +630,7 @@ article#consultar-oportunidades >div >fieldset >a >section >div >p {
     text-decoration: none;
     color: #0C326F;
     font-size: 20px;
-    font-weight: 500;   
+    font-weight: 500; 
 
 }
 
@@ -612,6 +655,13 @@ div#botao-6 > a {
     border: 1px solid #0C326F;
     border-radius: 30px;
     padding: 13px 13px 13px 13px;
+}
+
+div#botao-6 >a:hover{
+color: white;
+background-color: #1351B4;
+transition-duration: 3ms;
+border: 0px;
 }
 
 article#numeros{
@@ -668,78 +718,7 @@ div#botao-7 > a:hover {
     border-color: #053e9a;
 }
 
-article section#comunicados-div {
-   padding: 5px;
-   margin: 5px;
-  
-}
-
-article section#comunicados-div >fieldset {
-    border: 1px solid rgba(81, 81, 81, 0.38);
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    text-decoration: none;
-   
-}
-
-article section#comunicados-div >fieldset >legend{
-    text-align: center;
-    font-family: var(--fontetitulo);
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(38, 38, 38, 0.901);
-    padding: 10px;
-    text-decoration: none;
-   
-}
-
-article section#comunicados-div >fieldset >a{
-    display: inline-block;
-    text-decoration: none;
-    font-family: var(--fontetitulo);
-    color: #002869;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 10px 0px 0px 0px;
-}
-
-article section#comunicados-div >fieldset >p{
-    font-family: var(--fontegeral);
-    color: rgb(38, 38, 38);
-    font-size: 15px;
-    padding: 10px 0px 30px 0px;
-
-}
-
-article section#comunicados-div >fieldset >a:hover{
-    color: #1351B4;
-    text-decoration: underline;
-}
-
-div#botao-8 {
-    padding: 15px 0px 0px 0px;
-    margin: 10px;
-    text-align: center;
-}
-
-div#botao-8 > a {
-text-decoration: none;
-font-family: var(--fontegeral);
-color: var(--cormain);
-font-weight: 600;
-font-size: 16px;
-border: 1px solid #0C326F;
-border-radius: 30px;
-padding: 13px 20px 13px 20px;
-}
-
-div#botao-8 > a:hover {
-    color: white;
-    background-color: #1351B4;
-    transition-duration: 3ms;
-
-}
+/*estilos referente a parte de "comunicados"*/
 
 article section#comunicados-div {
    padding: 5px;
@@ -811,10 +790,11 @@ div#botao-8 > a:hover {
     color: white;
     background-color: #1351B4;
     transition-duration: 3ms;
+    border: 0px;
 
 }
 
-1111
+/*estilos referente a parte de "motícias"*/
 
 article section#noticias-div {
     padding: 5px;
@@ -891,7 +871,7 @@ article section#noticias-div {
  
  }
 
- 1111
+ /*estilos referente a parte de "comunicados"*/
 
  article section#eventos-div {
     text-align: center;
@@ -969,12 +949,11 @@ article section#noticias-div {
  }
 
 
- 1111
+  /*estilos referente a parte de "veja as novidades"*/
 
  article#canais-atendimento{
-    margin: 10px;
-    padding: 10px;
-    background-color: #ef0000f8;
+    background-color: #f8f8f8f8;
+    padding: 0px 0px 50px 0px;
 }
 
 article#canais-atendimento >a{
@@ -988,7 +967,7 @@ article#canais-atendimento div >h1{
     font-size: 24px;
     font-weight: 600;
     color: rgba(38, 38, 38, 0.901);
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 article#canais-atendimento div >h1:hover{
@@ -999,6 +978,7 @@ article#canais-atendimento div >h1:hover{
 article#canais-atendimento div >a >img {
     display: block;
     margin: auto;
+    padding-top: 40px;
 }
 
 /* Estilos para os links */
@@ -1015,11 +995,11 @@ article#canais-atendimento div >a {
     padding: 0px 0px 0px 0px;
 }
 
-/* Estilos para o hover nos links */
 article#canais-atendimento div >a:hover {
     text-decoration: underline #104ba8;
 }
 
+/* Estilos para a parte de "gov.br" */
 
 article#gov-br{
     background-color:#071D41;
@@ -1028,13 +1008,12 @@ article#gov-br{
 
 article#gov-br >h1{
     margin: 15px;
-    padding: 40px 15px 40px 15px ;
+    padding: 40px 15px 40px 10px ;
     text-align: left;
     font-family: var(--fontegeral);
     font-size: 55px;
     font-weight: 1000;
     color: white;
-    padding: 36px 0px 20px 0px;
 
 }
 
@@ -1045,10 +1024,43 @@ article#gov-br nav{
 
 article#gov-br nav >section#mais-topicos >h2{
     font-family: var(--fontegeral);
-    font-size: large;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px 0px 20px 5px;
     border-top: 1px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+article#gov-br nav >section#mais-topicos >h2 >span{
+    position: absolute;
+    left: 390px;
+    top: -4px;
+    font-size: 30px;
+    
+}
+article#gov-br nav >section#mais-topicos >h2:hover{
+    color: #5992ED;
+}
+
+article#gov-br >nav >section#mais-topicos >menu{
+    padding: 0px 0px 20px 0px;
+    display: none;
+}
+
+article#gov-br >nav >section#mais-topicos >menu >a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--fontegeral);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+
+
+}
+
+article#gov-br >nav >section#mais-topicos >menu >a:hover{
+    color: #5992ED;
 }
 
 article#gov-br >nav >section#redes-sociais >h2{
@@ -1079,4 +1091,8 @@ footer >p >a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+footer >p >a:hover{
+    color: #5992ED;
 }
