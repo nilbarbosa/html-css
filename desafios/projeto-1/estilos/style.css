@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*mobile first*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --font-principal: 'lato', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+
+header{
+    background-color: #253C59;
+    position: absolute;
+    width: 100vw;
+    height: 9vh;
+}
+
+header >div#img-logo >img{
+    width: 35px;
+    position: relative;
+    bottom: 5x;
+    padding: 12px 0px 2px 8px;
+}
+
+header >div#img-logo >div#link-to-go >p{
+    font-family: var(--font-principal);
+    font-size: smaller;
+    color: rgba(255, 255, 255, 0.744);
+    position: relative;
+    top: -41px;
+    left: 44px;
+    
+}
+
+div#link-to-go a{
+    position: relative;
+    bottom: 5x;
+    padding: 12px 0px 2px 6px;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    top: -40px;
+    left: 38px;
+    
+}
+
+
+header >div#botao-login{
+    position: relative;
+}
+
+header >div#botao-avaliacoes >a{
+    position: absolute;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    color: #36280d;
+    background-color: #D9B70D;
+    border-radius: 5px;
+    padding: 7px;
+    right: 25%;
+    top: 17px;
+    font-size: small;
+
+}
+
+header >div#botao-login >a >span{
+    font-size: 40px;
+    position: absolute;
+    right: 14%;
+    top: -77px;
+    color: #D9B70D;
+}
+
+header >div#botao-mais >a >span{
+    font-size: 40px;
+    position: absolute;
+    right: 8%;
+    top: 18px;
+    color: #D9B70D;
+}
