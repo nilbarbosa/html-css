@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+</head>
+<body>
+
+<form id="questionarioForm">
+    <label>
+        <input type="checkbox" name="opcao1" value="sim" class="opcaoCheckbox" onclick="exibirJustificativa('justificativaOpcao1')"> Sim
+    </label>
+    <label>
+        <input type="checkbox" name="opcao1" value="nao" class="opcaoCheckbox" onclick="exibirJustificativa('justificativaOpcao1')"> Não
+    </label>
+
+    <div id="justificativaOpcao1" style="display: none;">
+        <label for="justificativa1">Justificativa:</label>
+        <textarea name="justificativa1" id="justificativa1"></textarea>
+    </div>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="opcao2" value="sim" class="opcaoCheckbox" onclick="exibirJustificativa('justificativaOpcao2')"> Sim
+    </label>
+    <label>
+        <input type="checkbox" name="opcao2" value="nao" class="opcaoCheckbox" onclick="exibirJustificativa('justificativaOpcao2')"> Não
+    </label>
+
+    <div id="justificativaOpcao2" style="display: none;">
+        <label for="justificativa2">Justificativa:</label>
+        <textarea name="justificativa2" id="justificativa2"></textarea>
+    </div>
+
+    <br>
+
+    <button type="button" onclick="exibirJustificativa()">Enviar</button>
+</form>
+
+<script>
+    function exibirJustificativa(idJustificativa) {
+        var checkbox = document.querySelector('input[name="' + idJustificativa.replace('justificativa', '') + '"][value="sim"]');
+        var justificativa = document.getElementById(idJustificativa);
+        
+        if (checkbox.checked) {
+            justificativa.style.display = 'block';
+        } else {
+            justificativa.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
+
