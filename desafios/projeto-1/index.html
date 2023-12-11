@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="img-logo">
-            <!--  <img src="imagens/icone-logo.png" alt="logo to-go">  -->
+             <img src="imagens/icone-logo.png" alt="logo to-go"> 
             <div id="link-to-go">
                 <p>troque opiniões por milhas na</p>
                 <a href="#">To-Go: Reviews</a>
@@ -54,8 +54,9 @@
         <form action="dados.php" method="post">
             <article id="Local">
                 <div id="pais">
-                   <label for="ipais">Selecione o País</label>
+                   <label id="titulo-select-pais" class="titulo-select" for="ipais">Selecione o país:</label>
                    <select name="pais" id="ipais" required>
+                        <option value="" disabled selected hidden></option>
                         <option value="abecasia">Abecásia</option>
                         <option value="afeganistao">Afeganistão</option>
                         <option value="africa-do-sul">África do Sul</option>
@@ -272,14 +273,14 @@
                     </select>
                 </div>
                 <div id="local-visitado">
-                    <label for="ilocal">informe o Local Visitado:</label>
+                    <label class="titulo-select" for="ilocal">informe o Local Visitado:</label>
                     <input type="text" name="local" id="ilocal" required>
                 </div>
             </article>
             <article id="data">
-                <h2>informe a data de visita</h2>
-                <label for="idata-ida">de</label>
-                <input type="date" name="data-ida" id="idata-ida"> <label for="idata-chegada">a</label> <input type="date" name="data-chegada" id="idata-chegada">
+                <h2>datas</h2>
+                <label for="idata-ida">ida</label>
+                <input type="date" name="data-ida" id="idata-ida"> <label for="idata-chegada">volta</label> <input type="date" name="data-chegada" id="idata-chegada">
             </article>
             <article id="atributos">
                 <div id="selecionar-atributos" onsubmit="validateForm(event)">
