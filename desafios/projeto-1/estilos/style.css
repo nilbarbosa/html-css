@@ -15,50 +15,99 @@
 }
 
 body{
-    background-color: #2D4B73;
+    background-color: white;
 }
 
 header{
-    box-shadow: inset 2px 2px 14px rgba(0, 0, 0, 0.25);
-    background-color: #253C59;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.175);
+    background-color: #ffffff;
     margin-bottom: 10px;
     width: 100vw;
-    height: 9vh;
+    height: 8vh;
 }
 
-header >div#img-logo >img{
-    width: 35px;
-    position: relative;
-    bottom: 5x;
-    padding: 12px 0px 2px 8px;
-}
 
-header >div#img-logo >div#link-to-go >p{
-    font-family: var(--fonte-geral);
-    font-size: smaller;
-    color: rgba(255, 255, 255, 0.744);
-    position: relative;
-    top: -41px;
-    left: 44px;
-    
-}
-
-div#link-to-go a{
-    position: relative;
-    bottom: 5x;
-    padding: 12px 0px 2px 6px;
+div#link-to-go >a{
+    padding: 20px 50px 10px 20px;
+    margin-top: 200px;
     text-decoration: none;
     font-family: var(--fonte-geral);
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    top: -40px;
-    left: 38px;
+    color: rgb(0, 0, 0);
+}
+
+div#botao-person{
+   margin-left: 350px;
+    
+}
+
+div#botao-menu{
+    margin-left: 400px;
+    margin-top: -30px;
+}
+
+nav {
+    box-shadow: inset 2px 2px 3px rgba(133, 132, 132, 0.165);
+    margin-top: -10px;
+    margin-bottom: 30px;
+    height: 200px;
+    background-color: #f8f8f8f8;
+}
+
+nav >p#titulo{
+   font-family: var(--fonte-geral);
+   font-size: small;
+   color: rgb(88, 88, 88);
+   padding: 5px 0px 5px 15px;
+   border-radius: 25px;
+}
+
+nav >div#content{
+    max-width: 900px;
+    min-width: 240px;
+    margin: auto;
+}
+
+nav >div#content >p#lugares-em-alta{
+    width: 480px;
+    background-color: #2D4B73;
+    color: #ffffff;
+    padding: 5px 0px 5px 15px;
+}
+
+nav >div#content >div#iframe-reviews-alta{
+    background-color: #ffffff;
+    height: 130px;
+    position: relative;
+    padding: 10px;
+
+}
+
+nav >div#content >div#iframe-reviews-alta >div#review1{
+    background-color: #525252;
+    min-width: 230px;
+    max-width: 440px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    border-right: 1px solid black;
+}
+
+nav >div#content >div#iframe-reviews-alta >div#review2{
+    background-color: #525252;
+    min-width: 230px;
+    max-width: 440px;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
     
 }
 
 
+
 header >div#botao-login{
-    position: relative;
+   
 }
 
 header >div#botao-avaliacoes >a{
@@ -96,7 +145,7 @@ main{
     margin: auto;
     border-radius: 10px;
     font-family: var(--fonte-geral);
-    background-color: #253C59;
+    background-color: white;
     color: white;
 }
 
